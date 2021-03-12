@@ -1,0 +1,63 @@
+{
+  "brand": "Wind Crest!",
+  "name": "Heather Archibald",
+  "jobtitle": "Home Support Coordinator",
+  "greeting": "Hello",
+  "whoami": "Who I am & What I do",
+  "welcome": "Welcome to my page. Feel free to contact me with any questions!",
+  "phone": "515-555-5555",
+  "email": "heather0001@byui.edu",
+  "facebook": "test",
+  "twitter": "#",
+  "linkedin": "https://www.linkedin.com/in/heather-archibald-6a212297/",
+  "instagram": "#",
+
+  "section": [
+    {
+      "title": "Work History",
+      "text": "worked super hard at school"
+    }
+  ],
+  "picsection": [
+    {
+      "image": "personal.jpg",
+      "text": [
+        "short description of yourself",
+        "something else fun"
+      ]
+    },
+ {
+      "image": "personal.jpg",
+      "text": [
+        "short description of yourself",
+        "something else fun"
+      ]
+    }
+  ],
+  "listsection": [
+    {
+      "listtitle": "Skills",
+      "listitems": [
+        "skill1",
+        "skill2",
+        "skill3",
+        "skill4"
+      ]
+    }
+  ],  
+
+  "project1Site": "https://www.google.com",
+  "project1Image": "../images/app2.jpg",
+  "project1Title": "App 8",
+  "project1Technologies": "Java",
+  "project2Site": "https://www.google.com",
+  "project2Image": "../images/app2.jpg",
+  "project2Title": "App 8",
+  "project2Technologies": "Java",
+  "project3Site": "https://www.google.com",
+  "project3Image": "../images/app2.jpg",
+  "project3Title": "App 8",
+  "project3Technologies": "Java",
+
+  "contactEmail": "mailto:hello@hello.com"
+}
