@@ -72,7 +72,7 @@ function populateProjects() {
 */
 
 let divProjects = document.querySelectorAll('.project');
-  index = 0;
+  let index = 0;
   $( "body" ).data( "personData" ).projects.forEach(
     (project) => {
       divProjects[index].innerHTML =
