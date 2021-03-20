@@ -1,44 +1,44 @@
 {
-  "brand": "ZESTY",
-  "name": "Cebrin Billings",
-  "jobtitle": "SOFTWARE ENGINEER",
+  "brand": "Wind Crest",
+  "name": "Heather Archibald",
+  "jobtitle": "Home Support Corrdinator",
   "greeting": "Hello",
   "whoami": "Who I am & What I do",
   "welcome": "Welcome to my page. Feel free to contact me with any questions!",
-  "phone": "123-456-7891",
-  "email": "cebrin@byui.edu",
-  "facebook": "https://www.facebook.com/cebrin",
-  "twitter": "https://twitter.com/cebrinb",
-  "linkedin": "https://www.linkedin.com/in/cebrinbillings",
-  "instagram": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "phone": "303-886-2181",
+  "email": "heather001@comcast.net",
+  "facebook": "https://www.facebook.com/heatherma/",
+  "twitter": "https://twitter.com/heather90305904",
+  "linkedin": "https://www.linkedin.com/in/heather-archibald-6a212297/",
+  "instagram": "",
 
-  "aboutme1": "where you live, where you went to school, etc.",
-  "aboutme2": "'One time I ran a marathon!' or other interesting tidbits about you",  
+  "aboutme1": "I attend BYU-I, I am an inspiring Administrator",
+  "aboutme2": "Helping others is a passion!' or I love to go to the movies",  
 
   "title1": "Work History",
-  "workhistory1": "worked super hard at doing cool stuff and things",
+  "workhistory1": "QMAP, CNA, Restoritvie aide",
 
-  "title2": "Skills",
+  "title2": "Work History",
   "skills": [
-      "JavaScript",
-      "HTML/CSS/Bootstrap",
-      "Java",
-      "C++",
-      "Visual Studio",
-      "Python",
-      "PHP",
-      "Node.js",
-      "Visual Studio Code"
+      "Administrative Assistant",
+      "Proficient at Excel ",
+      "Microsoft office",
+      "Communication",
+      "Time Management",
+      "Customer Service",
+      "Opperations management",
+      "Project Management",
+      "Accounting/Finance"
   ],
 
   "title3": "Hobbies & Interests",
   "hobbies": [
-    "Horseback riding",
-    "Hiking",
-    "Gardening",
-    "Baking",
-    "Snorkelling",
-    "Reading",
+    "Paddleboard",
+    "Biking",
+    "Camping",
+    "Road trips",
+    "The dog park",
+    "Hike",
     "Home Renovation"
   ],
 
@@ -46,47 +46,13 @@
     ["https://www.google.com",
      "../images/project1image.jpg",
      "Project 1",
-     "Swift"],
+     "Helping Hands Service organization- Gobble Wobble 5-K"],
 
     ["https://www.google.com",
      "../images/project2image.jpg",
      "Project 2",
-     "Java"],
+     "Zesty- I helped build this website"]
 
-    ["https://www.google.com",
-     "../images/project3image.jpg",
-     "Project 3",
-     "HTML, CSS, JavaScript"],
-
-    ["https://www.google.com",
-     "../images/project2image.jpg",
-     "Project 4",
-     "Java"],
-
-    ["https://www.google.com",
-     "../images/project2image.jpg",
-     "Project 5",
-     "Java"],
-
-    ["https://www.google.com",
-     "../images/project2image.jpg",
-     "Project 6",
-     "Java"],
-
-    ["https://www.google.com",
-     "../images/project2image.jpg",
-     "Project 7",
-     "Java"],
-
-    ["https://www.google.com",
-     "../images/project2image.jpg",
-     "Project 8",
-     "Java"],
-
-    ["https://www.google.com",
-     "../images/project2image.jpg",
-     "Project 9",
-     "Java"]
 
     
   ]
