@@ -1,6 +1,6 @@
 body {
   padding-top: 75px;
-  background-image: url("/images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: 45% 100%;
   background-repeat: no-repeat;
   font-family: "Noto Sans", sans-serif;
@@ -20,17 +20,9 @@ a:not(.navbar-brand, .nav-link) {
 /*styling for homepage contact card center element*/
 .contact-card {
   padding-top: 80px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   margin-bottom: 80px;
-}
-
-/*adds a soft box shadow*/
-.shadowleft {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.shadowright {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
 }
 
 .card-title {
@@ -46,6 +38,7 @@ a:not(.navbar-brand, .nav-link) {
   background-color: #c1d7d9;
   padding: 0;
   padding-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #minifooter {
@@ -64,8 +57,14 @@ a:not(.navbar-brand, .nav-link) {
   background-color: #fff;
 }
 
+.btn-ceb {
+  margin: .2rem;
+}
+
+/*style the card elements on 'About' page*/
 .innerElement {
   padding: 15px;
+  margin-top: 15px;
 }
 
 .innerElement-left {
@@ -73,22 +72,33 @@ a:not(.navbar-brand, .nav-link) {
   justify-content: center;
   align-items: center;
   background-color: #c1d7d9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 13px;
+}
+
+.innerElement-left > h3 {
+  margin: 0;
 }
 
 .innerElement-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display:flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  
 }
 
-/*#resume-projects {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-left: 30%;
-  padding-right: 30%;
-}*/
+.minicolumn {
+  padding-right: 0;
+}
 
+.innerColumn .row:last-child {
+  margin-bottom: 20px;
+}
+
+/*color the lemons yellow*/
 .fa-lemon {
   color: #fff546;
 }
@@ -120,23 +130,11 @@ a:not(.navbar-brand, .nav-link) {
   padding: 2px 16px;
 }
 
-.formContainer {
-  text-align: center;
-  background-color: #c1d7d9;
-  height: 400px;
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30px;
-  border-radius: 25px;
-  margin-top: 50px;
-}
-
 #form {
-  margin-top: 50px;
+  margin-top: 45px;
   background-color: #c1d7d9;
   padding: 3em;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 /*styling links in footer to space evenly*/
@@ -147,24 +145,27 @@ a:not(.navbar-brand, .nav-link) {
   padding-right: 50px;
 }
 
-/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
-.footer {
-  background-color: #fff;
-  position: absolute;
-  bottom: 0;
+.footer-margin {
+  margin-top: 10px;
 }
 
 /*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
+.footer {
+  background-color: #fff;
+  position:absolute;
+}
+
 html {
   position: relative;
   min-height: 100%;
 }
 
-/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
-.footer-margin {
-  margin-top: 0px;
+/*!IMPORTANT!Styling to prevent footer from covering content on contact page*/
+.contact-footer {
+  bottom: 0;
 }
 
-#footer-spacing {
-  margin: 30px;
+pre {
+  margin-bottom: 15px;
+  padding-top: 225px;
 }

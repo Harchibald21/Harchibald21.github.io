@@ -1,10 +1,5 @@
 
 //jQuery that retrieves the contents of the .txt file and loads into DOM object
-// $(function(){
-//   $( "#target" ).load("../text.json");
-// });
-
-
 $.get("../text.json", function(data){
   $( "body" ).data("personData", data);
 }, 'json');
@@ -12,147 +7,133 @@ $.get("../text.json", function(data){
 
 function populateIndex() {
   //fill in homepage info
-  $("#brand").html($( "body" ).data( "personData" ).brand);
   $("#name").html($( "body" ).data( "personData" ).name);
   $("#jobtitle").html($( "body" ).data( "personData" ).jobtitle);
   $("#greeting").html($( "body" ).data( "personData" ).greeting);
   $("#whoami").html($( "body" ).data( "personData" ).whoami);
   $("#welcome").html($( "body" ).data( "personData" ).welcome);
-
-  //fill in footer links
-  $("#phone").html($( "body" ).data( "personData" ).phone);
-  $("#phone").attr('href', 'tel:' + ($( "body" ).data( "personData" ).phone));
-  $("#email").html($( "body" ).data( "personData" ).email);
-  $("#email").attr('href', 'mailto:' + ($( "body" ).data( "personData" ).email));
-  $('a[id^="facebook"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).facebook));
-  });
-  $('a[id^="twitter"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).twitter));
-  });
-  $('a[id^="linkedin"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).linkedin));
-  });
-  $('a[id^="instagram"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).instagram));
-  });
   
 }
 
 function populateAbout() {
   //fill in about me info 
   $("#brand").html($( "body" ).data( "personData" ).brand);
-  $("#section1").html($( "body" ).data( "personData" ).section1);
-  $("#description1").html($( "body" ).data( "personData" ).description1);
-  $("#section2").html($( "body" ).data( "personData" ).section2);
-  $("#description2").html($( "body" ).data( "personData" ).description2);
-  $("#section3").html($( "body" ).data( "personData" ).section3);
-  $("#skill1").html($( "body" ).data( "personData" ).skill1);
-  $("#skill2").html($( "body" ).data( "personData" ).skill2);
-  $("#skill3").html($( "body" ).data( "personData" ).skill3);
-  $("#skill4").html($( "body" ).data( "personData" ).skill4);
-  $("#skill5").html($( "body" ).data( "personData" ).skill5);
-  $("#skill6").html($( "body" ).data( "personData" ).skill6);
-  $("#skill7").html($( "body" ).data( "personData" ).skill7);
+  
+  //personal section
+  $("#aboutme1").html($( "body" ).data( "personData" ).aboutme1);
+  $("#aboutme2").html($( "body" ).data( "personData" ).aboutme2);
+  
+  //work history section
+  $("#title1").html($( "body" ).data( "personData" ).title1);
+  $("#workhistory1").html($( "body" ).data( "personData" ).workhistory1);
+  
+  //skills section
+  $("#title2").html($( "body" ).data( "personData" ).title2);
+  let divSkills = document.querySelectorAll('.skill');
+  index = 0;
+  $( "body" ).data( "personData" ).skills.forEach(
+    (skill) => {
+      divSkills[index].innerHTML = '<i class="fas fa-lemon"></i> ' + skill;
+      index++;
+    }
+  );
 
-  //fill in the footer links
-  $("#phone").attr('href', 'tel:' + ($( "body" ).data( "personData" ).phone));
-  $("#email").html($( "body" ).data( "personData" ).email);
-  $("#email").attr('href', 'mailto:' + ($( "body" ).data( "personData" ).email));
-  $('a[id^="facebook"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).facebook));
-  });
-  $('a[id^="twitter"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).twitter));
-  });
-  $('a[id^="linkedin"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).linkedin));
-  });
-  $('a[id^="instagram"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).instagram));
-  });
+  //hobbies section
+  $("#title3").html($( "body" ).data( "personData" ).title3);
+  let divHobbies = document.querySelectorAll('.hobby');
+  index = 0;
+  $( "body" ).data( "personData" ).hobbies.forEach(
+    (hobby) => {
+      divHobbies[index].innerHTML = '<i class="fas fa-lemon"></i> ' + hobby;
+      index++;
+    }
+  );
 }
 
 function populateProjects() {
   //populate projects info
   $("#brand").html($( "body" ).data( "personData" ).brand);
-  $("#project1Site").attr('href', $( "body" ).data( "personData" ).project1Site);
-  $("#project1Image").attr('src', $( "body" ).data( "personData" ).project1Image);
-  $("#project1Title").html($( "body" ).data( "personData" ).project1Title);
-  $("#project1Technologies").html($( "body" ).data( "personData" ).project1Technologies);
-  $("#project2Site").attr('href', $( "body" ).data( "personData" ).project1Site);
-  $("#project2Image").attr('src', $( "body" ).data( "personData" ).project1Image);
-  $("#project2Title").html($( "body" ).data( "personData" ).project1Title);
-  $("#project2Technologies").html($( "body" ).data( "personData" ).project1Technologies);
-  $("#project3Site").attr('href', $( "body" ).data( "personData" ).project1Site);
-  $("#project3Image").attr('src', $( "body" ).data( "personData" ).project1Image);
-  $("#project3Title").html($( "body" ).data( "personData" ).project1Title);
-  $("#project3Technologies").html($( "body" ).data( "personData" ).project1Technologies);
+/*
+  let projectsArray = document.querySelectorAll('.project');
+  var data = $( "body" ).data( "personData" ).projects;
+  let i = 0;
+  console.log(data[0][0]);
+  for(let i = 0; i<9; i++){
+    projectsArray[i].innerHTML = '<a href="'+ data[i][0] + '">' +
+      '<div class="card">' +
+        '<img src="'+ data[i][1] +'" style="width:350px; height:200px">' +
+        '<div class="container">' +
+          '<h4><b>'+ data[i][2] +'</b></h4>' +
+          '<p>'+ data[i][3] +'</p>' +
+        '</div>' +
+      '</div>' +
+    '</a>';
+    }
+*/
 
-  //fill in the footer links
-  $("#phone").attr('href', 'tel:' + ($( "body" ).data( "personData" ).phone));
-  $("#email").html($( "body" ).data( "personData" ).email);
-  $("#email").attr('href', 'mailto:' + ($( "body" ).data( "personData" ).email));
-  $('a[id^="facebook"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).facebook));
-  });
-  $('a[id^="twitter"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).twitter));
-  });
-  $('a[id^="linkedin"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).linkedin));
-  });
-  $('a[id^="instagram"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).instagram));
-  });
+let divProjects = document.querySelectorAll('.project');
+  index = 0;
+  $( "body" ).data( "personData" ).projects.forEach(
+    (project) => {
+      divProjects[index].innerHTML =
+      '<a href="'+ project[0] + '">' +
+        '<div class="card">' +
+          '<img src="'+ project[1] +'" style="width:350px; height:200px">' +
+          '<div class="container">' +
+            '<h4><b>'+ project[2] +'</b></h4>' +
+            '<p>'+ project[3] +'</p>' +
+          '</div>' +
+        '</div>' +
+      '</a>';
+      index++;
+    }
+  );
 }
 
 function populateContact() {
   //populate contact info
-  $("#brand").html($( "body" ).data( "personData" ).brand);
-  $("#contactEmail").attr('action', $( "body" ).data( "personData" ).contactEmail);
-
-  //fill in the footer links
-  $("#phone").attr('href', 'tel:' + ($( "body" ).data( "personData" ).phone));
-  $("#email").html($( "body" ).data( "personData" ).email);
-  $("#email").attr('href', 'mailto:' + ($( "body" ).data( "personData" ).email));
-  $('a[id^="facebook"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).facebook));
-  });
-  $('a[id^="twitter"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).twitter));
-  });
-  $('a[id^="linkedin"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).linkedin));
-  });
-  $('a[id^="instagram"]').each(function() { 
-    $(this).attr('href', ($( "body" ).data( "personData" ).instagram));
-  });
+  $("#contactEmail").attr('action', 'mailto:' + $( "body" ).data( "personData" ).email);
 }
 
+window.addEventListener("load", () => {
+  if ($( "body" ).data( "personData" )) {
+    let href = window.location.href.split('view/');
+    console.log(href[1]);
+    switch (href[1]) {
+      case 'index.html':
+        populateIndex();
+        break;
+      case 'about.html':
+        populateAbout();
+        break;
+      case 'projects.html':
+        populateProjects();
+        break;
+      case 'contact.html':
+        console.log('here');
+        populateContact();
+        break;
+      default:
+        break;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//AJAX request to retrieve server-side file and console.log it, 
-//or we could fill a DOM object with it.
-// var requestURL = 'http://127.0.0.1:5500/text.json';
-// let request = new XMLHttpRequest();
-// request.open('GET', requestURL);
-// request.responseType = 'json'; //change this to 'text' for a txt file
-// request.send();
-// request.onload = function() {
-//   const superhero = request.response;
-//   console.log(superhero);
-// }
+    //fill in the nav and footer links
+    $("#brand").html($( "body" ).data( "personData" ).brand);
+    $("#phone").html($( "body" ).data( "personData" ).phone);
+    $("#phone").attr('href', 'tel:' + ($( "body" ).data( "personData" ).phone));
+    $("#email").html($( "body" ).data( "personData" ).email);
+    $("#email").attr('href', 'mailto:' + ($( "body" ).data( "personData" ).email));
+    $('a[id^="facebook"]').each(function() { 
+      $(this).attr('href', ($( "body" ).data( "personData" ).facebook));
+    });
+    $('a[id^="twitter"]').each(function() { 
+      $(this).attr('href', ($( "body" ).data( "personData" ).twitter));
+    });
+    $('a[id^="linkedin"]').each(function() { 
+      $(this).attr('href', ($( "body" ).data( "personData" ).linkedin));
+    });
+    $('a[id^="instagram"]').each(function() { 
+      $(this).attr('href', ($( "body" ).data( "personData" ).instagram));
+    });
+  } 
+});
