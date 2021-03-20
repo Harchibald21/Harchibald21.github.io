@@ -1,63 +1,93 @@
 {
-  "brand": "Wind Crest!",
-  "name": "Heather Archibald",
-  "jobtitle": "Home Support Coordinator",
+  "brand": "ZESTY",
+  "name": "Cebrin Billings",
+  "jobtitle": "SOFTWARE ENGINEER",
   "greeting": "Hello",
   "whoami": "Who I am & What I do",
   "welcome": "Welcome to my page. Feel free to contact me with any questions!",
-  "phone": "303-886-2181",
-  "email": "heather0001@comcast.net",
-  "facebook": "https://www.facebook.com/",
-  "twitter": "#",
-  "linkedin": "https://www.linkedin.com/in/heather-archibald-6a212297/",
-  "instagram": "#",
+  "phone": "123-456-7891",
+  "email": "cebrin@byui.edu",
+  "facebook": "https://www.facebook.com/cebrin",
+  "twitter": "https://twitter.com/cebrinb",
+  "linkedin": "https://www.linkedin.com/in/cebrinbillings",
+  "instagram": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
 
-  "section": [
-    {
-      "title": "Work History",
-      "text": "CNA, QMAP, Restoritive aide, inspiring student looking to be an Administrator"
-    }
+  "aboutme1": "where you live, where you went to school, etc.",
+  "aboutme2": "'One time I ran a marathon!' or other interesting tidbits about you",  
+
+  "title1": "Work History",
+  "workhistory1": "worked super hard at doing cool stuff and things",
+
+  "title2": "Skills",
+  "skills": [
+      "JavaScript",
+      "HTML/CSS/Bootstrap",
+      "Java",
+      "C++",
+      "Visual Studio",
+      "Python",
+      "PHP",
+      "Node.js",
+      "Visual Studio Code"
   ],
-  "picsection": [
-    {
-      "image": "personal.jpg",
-      "text": [
-        "short description of yourself",
-        "something else fun"
-      ]
-    },
- {
-      "image": "personal.jpg",
-      "text": [
-        "short description of yourself",
-        "something else fun"
-      ]
-    }
+
+  "title3": "Hobbies & Interests",
+  "hobbies": [
+    "Horseback riding",
+    "Hiking",
+    "Gardening",
+    "Baking",
+    "Snorkelling",
+    "Reading",
+    "Home Renovation"
   ],
-  "listsection": [
-    {
-      "listtitle": "Skills",
-      "listitems": [
-        "skill1",
-        "skill2",
-        "skill3",
-        "skill4"
-      ]
-    }
-  ],  
 
-  "project1Site": "https://www.google.com",
-  "project1Image": "../images/app2.jpg",
-  "project1Title": "App 8",
-  "project1Technologies": "Java",
-  "project2Site": "https://www.google.com",
-  "project2Image": "../images/app2.jpg",
-  "project2Title": "App 8",
-  "project2Technologies": "Java",
-  "project3Site": "https://www.google.com",
-  "project3Image": "../images/app2.jpg",
-  "project3Title": "App 8",
-  "project3Technologies": "Java",
+  "projects": [
+    ["https://www.google.com",
+     "../images/project1image.jpg",
+     "Project 1",
+     "Swift"],
 
-  "contactEmail": "mailto:heather0001@comcast.net"
+    ["https://www.google.com",
+     "../images/project2image.jpg",
+     "Project 2",
+     "Java"],
+
+    ["https://www.google.com",
+     "../images/project3image.jpg",
+     "Project 3",
+     "HTML, CSS, JavaScript"],
+
+    ["https://www.google.com",
+     "../images/project2image.jpg",
+     "Project 4",
+     "Java"],
+
+    ["https://www.google.com",
+     "../images/project2image.jpg",
+     "Project 5",
+     "Java"],
+
+    ["https://www.google.com",
+     "../images/project2image.jpg",
+     "Project 6",
+     "Java"],
+
+    ["https://www.google.com",
+     "../images/project2image.jpg",
+     "Project 7",
+     "Java"],
+
+    ["https://www.google.com",
+     "../images/project2image.jpg",
+     "Project 8",
+     "Java"],
+
+    ["https://www.google.com",
+     "../images/project2image.jpg",
+     "Project 9",
+     "Java"]
+
+    
+  ]
 }
