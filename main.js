@@ -30,7 +30,7 @@ function populateAbout() {
   //skills section
   $("#title2").html($( "body" ).data( "personData" ).title2);
   let divSkills = document.querySelectorAll('.skill');
-  index = 0;
+  let index = 0;
   $( "body" ).data( "personData" ).skills.forEach(
     (skill) => {
       divSkills[index].innerHTML = '<i class="fas fa-lemon"></i> ' + skill;
