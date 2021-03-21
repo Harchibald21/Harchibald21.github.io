@@ -13,19 +13,19 @@
   "instagram": "",
 
   "aboutme1": "I attend BYU-I, I am an inspiring Administrator",
-  "aboutme2": "Helping others is a passion!' or I love to go to the movies",  
+  "aboutme2": "Being a mother and attending school has taught me many skills'I love change it helps us grow in ways we never expected ",  
 
   "title1": "Work History",
   "workhistory1": "QMAP, CNA, Restoritvie aide",
 
   "title2": "Skills",
   "skills": [
-      "Administrative Assistant",
-      "Proficient at Excel ",
-      "Microsoft office",
-      "Communication",
-      "Time Management",
-      "Customer Service",
+      "Managing Staff and Resident Concerns",
+      "Proficient at Excel, Word, and Outlook ",
+      "Interpretation of Data",
+      "Critical Thinking and Problem Solving ",
+      "Time Management in Fast Pace Enviroment",
+      "Teambuilding",
       "Opperations Management",
       "Project Management",
       "Accounting/Finance"
@@ -36,17 +36,17 @@
     "Paddleboard",
     "Biking",
     "Camping",
-    "Road trips",
-    "The dog park",
+    "Road Trips",
+    "Yoga",
     "Hike",
-    "Home Renovation"
+    "Learning Something New"
   ],
 
   "projects": [
     ["https://www.google.com",
      "../images/project1image.jpg",
      "Project 1",
-     "Helping Hands Service - Gobble Wobble 5-K"],
+     "Volenteer Coordinator Gobble Wobble 5-K"],
 
     ["https://www.google.com",
      "../images/project2image.jpg",
